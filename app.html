@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderFood</title>
+    <link rel="stylesheet" href="app.css">
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-bar">
+                <img src="images/menu-bar.png" alt="Menu">
+            </label>
+
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="text-side">
+                <h1>LOREM IPSUM</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, asperiores ullam! Nemo, eos? Eum
+                    molestias dolores repellat maiores ratione non provident vitae velit ipsam nisi, a perspiciatis
+                    dolore officia sequi.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, asperiores ullam!
+                    Nemo, eos? Eum molestias dolores repellat maiores ratione non provident vitae velit ipsam nisi, a
+                    perspiciatis dolore officia sequi.</p>
+                <button>Click Me</button>
+            </div>
+            <div class="image-side">
+                <img src="images/pexels-robin-stickel-70497.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="container-1">
+        <div class="image-side-1">
+            <div class="set-1">
+                <img src="images/pexels-rachel-claire-6752433.jpg" alt="">
+                <img src="images/pexels-eva-bronzini-6141651.jpg" alt="">
+            </div>
+            <div class="set-2">
+                <img src="images/pexels-mister-mister-3434523.jpg" alt="">
+            </div>
+        </div>
+        <div class="text-side-1">
+            <div class="para-1">
+                <p>
+                    LOERM IPSUM
+                </p>
+                <h1>
+                    LOERM IPSUM</br>SET ADEMIR
+                </h1>
+
+
+                <div class="click-1">
+                    <a href="#">Click</a>
+                    <img src="images/icons8-arrow-30.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navUl = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('change', () => {
+            navUl.style.display = menuToggle.checked ? 'flex' : 'none';
+        });
+        function isMobile() {
+            return window.innerWidth <= 768;
+        }
+        window.addEventListener('resize', () => {
+            if (!isMobile()) {
+                navUl.style.display = 'flex';
+                menuToggle.checked = false;
+            }
+        });
+    </script>
+</body>
+
+
+</html>
