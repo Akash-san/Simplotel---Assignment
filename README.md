@@ -6,12 +6,9 @@ A simple web application for ordering food online.
 
 - [Features](#features)
 - [Getting Started](#getting-started)
-  - [Tech]
-  - [About Simplotel]
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+  - [Tech](#Tech)
+  - [About Simplotel](#About-Simplotel)
+  - [How to Use](#How-to-Use)
 
 ## Features
 
